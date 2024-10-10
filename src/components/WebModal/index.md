@@ -1,16 +1,16 @@
 ---
-title: List
+title: Modal
 group:
-  title: List
+  title: Modal
 nav:
   title: 区块
   path: /components
 ---
 
-# List
+# Modal
 
 ## 使用命令
 
-> cblock add page List
+> cblock add page WebModal
 
 ## 代码演示

@@ -4,7 +4,6 @@
   "description": "全局命令小助手",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "typings": "dist/index.d.ts",
   "scripts": {
     "publish": "npm publish --access=public",
     "start": "dumi dev",

@@ -15,13 +15,7 @@ module.exports = function createBlockFile(type, name) {
       if (item.indexOf('.md') !== -1) return;
       if (item.indexOf('.') !== -1) {
         const targetPath = join(__dirname, `../src/components/${path}`, item);
-        const createPath = join(
-          dName,
-          'src/pages',
-          'blockTemplate',
-          path,
-          item,
-        );
+        const createPath = join(dName, 'src', 'blockTemplate', path, item);
         console.log(color.green('write:'), createPath);
         copy(targetPath, createPath);
       } else {
