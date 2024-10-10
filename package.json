@@ -1,0 +1,70 @@
+{
+  "name": "@alitojs/cb-builder",
+  "version": "0.0.1",
+  "description": "全局命令小助手",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "publish": "npm publish --access=public",
+    "start": "dumi dev",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "release": "npm run build && npm publish",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "keywords": [
+    "React",
+    "命令行",
+    "components",
+    "template"
+  ],
+  "bin": {
+    "cblock": "scripts/index.js"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "authors": [
+    ""
+  ],
+  "license": "ISC",
+  "email": "437132124@qq.com",
+  "repository": {
+    "url": "http://gitlab.iwhalecloud.com/seal/government-enterprise-integration/platformcenter/grov_common_page"
+  },
+  "dependencies": {
+    "@alitajs/antd-mobile-plus": "^0.7.6",
+    "@alitajs/list-view": "^1.0.6",
+    "antd-mobile": "^2.3.4",
+    "colors-cli": "^1.0.27",
+    "commander": "^6.0.0",
+    "copy-to-clipboard": "^3.3.1",
+    "fs": "^0.0.1-security",
+    "react": "^16.12.0",
+    "fs-extra": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.171",
+    "@umijs/test": "^3.0.5",
+    "dumi": "^1.0.16",
+    "father-build": "^1.17.2",
+    "gh-pages": "^3.0.0",
+    "lint-staged": "^10.0.7",
+    "prettier": "^2.2.1",
+    "yorkie": "^2.0.0"
+  }
+}
