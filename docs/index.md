@@ -2,7 +2,7 @@
 title: cb-builder - 区块生成器
 order: 10
 hero:
-  title: cb-builder
+  title: alitojs/cb-builder
   desc: 📖 移动端的区块生成器
   actions:
     - text: 快速上手
@@ -13,11 +13,11 @@ footer: Open-source MIT Licensed | Copyright © 2021-present<br />Powered by han
 ## 安装
 
 ```bash
-yarn global add cb-builder
+yarn global add @alitojs/cb-builder
 
 or
 
-npm install -g cb-builder
+npm install -g @alitojs/cb-builder
 ```
 
 ## 使用

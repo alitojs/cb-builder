@@ -1,6 +1,6 @@
 {
   "name": "@alitojs/cb-builder",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "全局命令小助手",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -46,15 +46,14 @@
     "url": "http://gitlab.iwhalecloud.com/seal/government-enterprise-integration/platformcenter/grov_common_page"
   },
   "dependencies": {
-    "@alitajs/antd-mobile-plus": "^0.7.6",
-    "@alitajs/list-view": "^1.0.6",
-    "antd-mobile": "^2.3.4",
     "colors-cli": "^1.0.27",
     "commander": "^6.0.0",
     "copy-to-clipboard": "^3.3.1",
     "fs": "^0.0.1-security",
-    "react": "^16.12.0",
     "fs-extra": "^10.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.6"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.171",

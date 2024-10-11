@@ -5,11 +5,11 @@
 ## 安装
 
 ```bash
-yarn global add cb-builder
+yarn global add @alitojs/cb-builder
 
 or
 
-npm install -g cb-builder
+npm install -g @alitojs/cb-builder
 ```
 
 ## 使用
@@ -17,3 +17,7 @@ npm install -g cb-builder
 ```bash
 cblock add page [blockName]
 ```
+
+### 生成位置
+
+`src/blockTemplate`
